@@ -1,4 +1,4 @@
-(ns clojure-workshop.core)
+(ns clojure-workshop.chapter1)
 
 (if true "Yes" "No")
 

@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "dacbb75839876143",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b314c854444d188",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Функи/Список.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ee5099107c44d662",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8176564ba388fb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b98605d3b502cef",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c714666a9beb203f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b385be8d63710c26",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d75e2b3e2be0cde",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "686b0c58be41a9f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Функи/Список.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2b314c854444d188",
+  "lastOpenFiles": [
+    "Функи/Функи.md",
+    "Clojure libs for fullstack development.md",
+    "The Clojure Workshop. Chapter 2.md",
+    "The Clojure Workshop. Chapter 3.md",
+    "The Clojure Workshop. Chapter I.md"
+  ]
+}

@@ -1,4 +1,5 @@
-(ns clojure-workshop.chapter3)
+(ns clojure-workshop.chapter3
+  (:require [java-time :as time]))
 
 (defn print-coords [coords]
   (let [[lat lon] coords]
@@ -71,7 +72,7 @@
                                      :lon 2.4372 
                                      :name "Paris Le Bourget Airport"}}]}) 
 
-(let [{:keys [customer-name flights]}mapjet-booking]
+(let [{:keys [customer-name flights]} mapjet-booking]
   (println (str customer-name " booked " (count flights) " flights.")))
 
 
@@ -79,7 +80,6 @@
   (let [{{lat1 :lat lon1 :lon} :from
           {lat2 :lat lon2 :lon} :to } flight]
     (println (str "Flying from: Lat " lat1 " Lon " lon1 " Flying to: Lat " lat2 " Lon " lon2))))
-
 
 (print-mapjet-flight mapjet-booking)
 
@@ -107,8 +107,7 @@
 (#(str %1 " " %2 " " %3) "First" "Second" "Third")
 
 (def weapon-fn-map 
-  {
-   :fists (fn [health] (if (< health 100) (- health 10) health))
+  {:fists (fn [health] (if (< health 100) (- health 10) health))
    :staff (partial + 30)
    :sword #(- % 100)
    :cast-iron-saucepan #(- % 100 (rand-int 50))
@@ -126,8 +125,6 @@
 
 (strike enemy :sword)
 
-;; (update enemy :health (comp (:sword weapon-fn-map) (:cast-iron-saucepan weapon-fn-map)))
-
 (defn mighty-strike [target]
   (let [weapon-fn (apply comp (vals weapon-fn-map))]
     (update target :health weapon-fn)))
@@ -139,7 +136,41 @@
   ([f] (f))
   ([f x] (f x))
   ([f x & more] (apply f x more)))
-    
 
-   
-   
+(defmulti strike2 :weapon)
+
+(defmethod strike2 :sword
+  [{{:keys [ :health ]} :target}]
+  (- health 100))
+
+(strike2 {:weapon :sword :target {:health 140}})
+
+(vec {:a 1})
+(vec #{:a :b :c :d})
+(vec '(1 2 3))
+(vec [1 2 3])
+
+(vector {:a 1})
+(vector #{:a :b :c :d})
+(vector '(1 2 3))
+(vector [1 2 3])
+
+(conj #{:a :b :c} :c :d :a)
+
+(conj #{:a :b :c} #{:a})
+
+(set '(:a :b :c))
+(set '(:a :a :b :c :c :c :c :d :d))
+
+(hash-map :a 10, :b 20, :c 30)
+
+(conj {:a 1} {:b 2} [:c 3])
+
+(hash-set 0 2 3)
+
+(last (map (fn [i _] (inc i)) (range) [1 2 3]))
+
+((comp last map) (fn [i _] (inc i)) (range) [1 2 3])
+
+
+

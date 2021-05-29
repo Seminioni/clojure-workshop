@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Функи/Список.md",
+            "file": "4clojure/Count a Sequence.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Функи/Список.md",
+                "file": "4clojure/Count a Sequence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,15 @@
   },
   "active": "2b314c854444d188",
   "lastOpenFiles": [
-    "Функи/Функи.md",
-    "Clojure libs for fullstack development.md",
+    "4clojure/Count a Sequence.md",
+    "4clojure/Untitled.md",
+    "Функи/conj.md",
+    "Типы данных/set.md",
+    "The Clojure Workshop. Chapter I.md",
     "The Clojure Workshop. Chapter 2.md",
+    "Типы данных/map.md",
     "The Clojure Workshop. Chapter 3.md",
-    "The Clojure Workshop. Chapter I.md"
+    "Типы данных/Untitled.md",
+    "с сетом.md"
   ]
 }

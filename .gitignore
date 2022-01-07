@@ -13,3 +13,4 @@ pom.xml.asc
 .calva/output-window/output.calva-repl
 .clj-kondo
 synopsis/.obsidian
+.lsp

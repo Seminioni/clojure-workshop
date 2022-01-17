@@ -199,4 +199,16 @@
 (max-value-by-status :experience-level :terminated game-users)
 (min-value-by-status :experience-level :imprisoned game-users)
 
+(->> (repeatedly (partial rand-int 100))
+    (take 5))
+
+(defn recursive-sum [so-far numbers]
+   (if (first numbers)
+    (recursive-sum
+     (+ so-far (first numbers))
+     (next numbers))
+  so-far))
+
+(recursive-sum 0 [1 2 3 4])
+
 
